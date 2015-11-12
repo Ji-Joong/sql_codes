@@ -1,2 +1,2 @@
 # sql_codes
-Just practicing writing queries in PostgreSQL. Newby.
+Just practicing writing queries in PostgreSQL. Total Newbie.
