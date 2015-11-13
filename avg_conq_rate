@@ -1,0 +1,5 @@
+--아직 개별 유저의 현재 정복률이 반영이 안됐음.
+select small_tag_id, avg(numerator/denominator) as user_avg_conq_rate
+from user_small_tags
+where denominator <> 0
+GROUP BY small_tag_id ;
