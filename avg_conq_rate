@@ -5,7 +5,7 @@ where denominator <> 0
 GROUP BY small_tag_id ;
 
 
---개별 유저의 현재 정복률만 반영한 계산
+--개별 유저의 현재 정복률만 반영한 계산(in이란 함수가 있었다니....)
 select small_tag_id, avg(numerator/denominator) as user_avg_conq_rate
 from user_small_tags
 where denominator <> 0 and quiz_id in (select max(quiz_id)
