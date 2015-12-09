@@ -1,4 +1,4 @@
-select user_id, avg(max(solved_at) - min(solved_at)) as time)
+select user_id, (max(solved_at) - min(solved_at)) as time
 from quiz_items
 where user_id in (select id from users where admin is false)
   and quiz_item_type = 'newest'
